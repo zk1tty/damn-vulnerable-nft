@@ -1,19 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-/**
- *  ___  ___ _____  _____   ___  ___  ___  ___  
- *  |  \/  ||_   _||_   _| / _ \ |  \/  | / _ \ 
- *  | .  . |  | |    | |  / /_\ \| .  . |/ /_\ \
- *  | |\/| |  | |    | |  |  _  || |\/| ||  _  |
- *  | |  | | _| |_   | |  | | | || |  | || | | |
- *  \_|  |_/ \___/   \_/  \_| |_/\_|  |_/\_| |_/
- * 
- * produced by http://mitama-mint.com/
- * inspired by Kiwami.sol
- * written by zkitty.eth
- */
-
 import "erc721a/contracts/ERC721A.sol";
 import "@openzeppelin/contracts/token/common/ERC2981.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -22,12 +9,12 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./MerkleWhitelist.sol";
 import "./DAHelper.sol";
 
-contract _Mitama is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGuard{
+contract NFTAuction is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGuard{
     using Strings for uint256;
     using Strings for uint8;
 
     /**
-     * Mitama Dutch Auction configration: configured by the team at deployment.
+     *  Dutch Auction configration: configured by the team at deployment.
      * For testnet testing
      */
     uint256 public DA_STARTING_PRICE = 0.000025 ether;
@@ -44,7 +31,7 @@ contract _Mitama is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGuard{
     address public TEAM_WALLET = 0xabf54b4da815309cB17055c7D4E5a31cDE5f1aBe;
 
     /**
-     * Mitama NFT configuration: configured by the team at deployment.
+     *  NFT configuration: configured by the team at deployment.
      */
     uint256 public TOKEN_QUANTITY = 10000;
     uint256 public FREE_MINT_QUANTITY = 420;
@@ -108,7 +95,7 @@ contract _Mitama is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGuard{
      */
     constructor(
         string memory _unrevealedURI
-    ) ERC721A ('Mitama', 'MTM') {
+    ) ERC721A ('newNFT', 'NNFT') {
         setRevealData(false, _unrevealedURI);
     }
     
