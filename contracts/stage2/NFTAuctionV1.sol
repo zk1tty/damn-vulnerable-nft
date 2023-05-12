@@ -6,8 +6,8 @@ import "@openzeppelin/contracts/token/common/ERC2981.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "./MerkleWhitelist.sol";
-import "./DAHelper.sol";
+import "../util/MerkleWhitelist.sol";
+import "../util/DAHelper.sol";
 
 contract NFTAuction is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGuard{
     using Strings for uint256;
