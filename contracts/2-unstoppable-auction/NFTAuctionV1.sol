@@ -28,7 +28,7 @@ contract NFTAuction is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGua
     // wait 1 week:
     uint256 public WAITING_FINAL_WITHDRAW = 60*60*24*7;
     // Withdraw address
-    address public TEAM_WALLET = 0xabf54b4da815309cB17055c7D4E5a31cDE5f1aBe;
+    address public TEAM_WALLET = 0xf4c6CCfd7441FFAF6809889f245136dC5B3545CA;
 
     /**
      *  NFT configuration: configured by the team at deployment.

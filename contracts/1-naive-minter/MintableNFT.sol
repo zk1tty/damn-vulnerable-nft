@@ -19,6 +19,7 @@ contract MintableNFT is ERC721, Ownable {
     function mintMulti(uint256 quantity,address to) payable public returns (uint256) {
         require(tokenPrice != 0, "set tokenPrice.");
         require(msg.value == tokenPrice, "payment amount is wrong.");
+
         for (uint256 i = 0; i < quantity; ) {
             _mintOne(to);
             ++ i;
