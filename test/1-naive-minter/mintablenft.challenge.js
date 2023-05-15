@@ -4,7 +4,7 @@ const { expect } = require('chai');
 describe('[Stage1] Naive Minter', function () {
     before(async function () {
         /** SETUP SCENARIO - NO NEED TO CHANGE ANYTHING HERE */
-        console.log("preparation: mint");
+        
     });
     it('Execution', function(){
         /** CODE YOUR SOLUTION HERE */

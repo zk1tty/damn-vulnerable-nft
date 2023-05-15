@@ -95,7 +95,7 @@ contract NFTAuction is ERC721A, ERC2981, Ownable, MerkleWhitelist, ReentrancyGua
      */
     constructor(
         string memory _unrevealedURI
-    ) ERC721A ('newNFT', 'NNFT') {
+    ) ERC721A ('CSTFToken', 'CSTF') {
         setRevealData(false, _unrevealedURI);
     }
     
