@@ -1,14 +1,15 @@
 
 # damn-vulnerable-nft
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Setting up
 
-Try running some of the following tasks:
+- make sure that you have a `hardhat` dev env. 
 
 ```shell
 npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npx hardhat test <a file filepath>
 ```
+
+## Quiz overview
+
+Access [this Notion page!](https://0xcerberus.notion.site/Damn-Vulnerable-NFT-888ba677fdaf4e24ac78b9cb4963a9fb)
