@@ -1,5 +1,9 @@
 
 # damn-vulnerable-nft
+![HACKED](https://github.com/zk1tty/damn-vulnerable-nft/assets/23345846/e1712e57-1ef9-4667-9a0c-c1b5ed4f84fd)
+
+
+
 
 I organized the Cats The Flag (Please check the event detail from [cstf.dev](https://cstf.dev/)) at EthLisbon and EthCC on 15th May in 2023.  
 The Damn Vulnerable NFT is the quiz made for 1st Cats The Flag by [zkitty](https://github.com/zk1tty).  
